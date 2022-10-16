@@ -468,6 +468,8 @@ pnpx surge --domain <your_subdomain_here>.surge.sh dist
 
 ```
 
+If you do publish your site I'd love to see it. [Send me a tweet](https://twitter.com/intent/tweet?text=%40jahredhope%0A) and I'll check it out.
+
 ## Next steps
 
 If you want to do more to make the app unique, perhaps consider some of the following challenges:
