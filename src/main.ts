@@ -154,17 +154,15 @@ class Piece {
 
 for (let i = 0; i < count / 3; i++) {
   pieces.push(
-    new Piece(
-      new Vector(Math.random() * canvas.width, Math.random() * canvas.height),
-      "paper"
-    ),
-    new Piece(
-      new Vector(Math.random() * canvas.width, Math.random() * canvas.height),
-      "rock"
-    ),
-    new Piece(
-      new Vector(Math.random() * canvas.width, Math.random() * canvas.height),
-      "scissors"
+    ...(["paper", "rock", "scissors"] as const).map(
+      (type) =>
+        new Piece(
+          new Vector(
+            Math.random() * canvas.width,
+            Math.random() * canvas.height
+          ),
+          type
+        )
     )
   );
 }

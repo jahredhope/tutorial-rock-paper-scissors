@@ -1,6 +1,6 @@
 # Tutorial: Rock Paper Scissors
 
-A step by step tutorial on creating your own rock paper scissors animation.
+A step-by-step tutorial on creating your own rock paper scissors animation.
 
 Three main parts:
 
@@ -89,10 +89,10 @@ Create a function called `render` and have it request itself be drawn in the nex
 function render() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   // Update
-  // ...
+  // ... TODO in Step 12
 
   // Draw
-  // ...
+  // ... TODO in Step 9
 
   requestAnimationFrame(render);
 }
@@ -130,9 +130,11 @@ class Piece {
   constructor(public pos: Vector, public type: Type) {}
   public update() {
     // Update itself
+    // TODO in step 11
   }
   public draw() {
     // Draw itself
+    // TODO in Step 8
   }
 }
 ```
@@ -141,22 +143,23 @@ class Piece {
 
 To start seeing the results of our work we'll need to create some pieces. In the example below we create them at a random location, but it's up to you.
 
+We'll set an item `count` of 21, and divide by 3 as we are drawing three items every loop. This makes sure it's a nice fair division.
+
 ```ts
+const count = 21;
 const pieces: Piece[] = [];
 
 for (let i = 0; i < count / 3; i++) {
   pieces.push(
-    new Piece(
-      new Vector(Math.random() * canvas.width, Math.random() * canvas.height),
-      "paper"
-    ),
-    new Piece(
-      new Vector(Math.random() * canvas.width, Math.random() * canvas.height),
-      "rock"
-    ),
-    new Piece(
-      new Vector(Math.random() * canvas.width, Math.random() * canvas.height),
-      "scissors"
+    ...(["paper", "rock", "scissors"] as const).map(
+      (type) =>
+        new Piece(
+          new Vector(
+            Math.random() * canvas.width,
+            Math.random() * canvas.height
+          ),
+          type
+        )
     )
   );
 }
@@ -198,7 +201,7 @@ We now have some pieces and they know how to draw themselves. We just need to ca
 function render() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   // Update
-  // ...
+  // ... TODO in Step 12
 
   // Draw
   pieces.forEach((p) => p.draw(ctx));
