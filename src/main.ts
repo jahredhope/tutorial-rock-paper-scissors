@@ -135,14 +135,18 @@ class Piece {
   private getClosestByType(type: Type) {
     let closestDistance = Number.MAX_VALUE;
     let closest;
+
     for (let p of pieces) {
       if (p.type !== type) continue;
+
       const distance = this.pos.distance(p.pos);
+
       if (distance < closestDistance) {
         closestDistance = distance;
         closest = p;
       }
     }
+
     if (!closest) return null;
     return { piece: closest, distance: closestDistance };
   }
