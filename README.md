@@ -16,6 +16,6 @@ Three main parts:
 
 For a working example, check out [the complete source-code](./example/src/main.ts).
 
-Next: [Chapter One - Setup](./One-Setup.md)
+Next: [Chapter One - Setup](./1-Setup.md)
 
 By [@jahredhope](https://jahred.me/)
