@@ -2,7 +2,7 @@
 
 At this point you've basically finished. It's up to you what to do next. I'd recommend deploying the site so other people can see your work. And if you still want to practice more, checkout optional things you could do.
 
-## Step 13: Deploying the Site
+## Step 15: Deploying the Site
 
 If you've got this far, you should probably publish your work somewhere, so people can see what you've built.
 

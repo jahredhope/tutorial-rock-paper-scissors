@@ -24,7 +24,11 @@ class Vector {
 
 This will be the thing that moves around the screen. It'll have a type for whether it is rock, paper, or scissors.
 
-Eventually it'll given the ability to update itself and draw itself.
+Eventually it'll given the ability to update itself and draw itself. But for now lets just create a class with two methods.
+
+`update` will allow the piece to decide what to do in the next tick.
+
+`draw` will allow the piece to draw itself to the screen.
 
 ```ts
 type Type = "rock" | "paper" | "scissors";
@@ -114,7 +118,7 @@ function render() {
   // ... TODO in Step 12
 
   // Draw
-  pieces.forEach((p) => p.draw(ctx));
+  pieces.forEach((p) => p.draw());
   requestAnimationFrame(render);
 }
 
@@ -124,6 +128,8 @@ render();
 ## Chapter Summary
 
 At this point you should have some rocks, papers, and scissors displayed on the screen. They won't be moving yet. That comes in the next chapter.
+
+> **Note** Not working? Checkout the [Step 2 Example Code](example-step-2/src/main.ts).
 
 Prev: [Chapter One - Setup](./1-Setup.md)
 

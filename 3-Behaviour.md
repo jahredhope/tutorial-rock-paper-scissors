@@ -133,7 +133,15 @@ const forceFromPredator = dirFromPredator.multiply(magnitudeFromPredator);
 let directionToMove = forceFromPrey.add(forceFromPredator).normalize();
 ```
 
-While we are in the area lets give the pieces a little motivation to spread out.
+And now apply the total to our position.
+
+```ts
+this.pos = this.pos.add(directionToMove);
+```
+
+## Step 12. Spread pieces out
+
+While we are in the area lets give the pieces a little motivation to spread out. If we don't do this allies will just clump together which doesn't look as nice.
 
 ```ts
 // Spread out a bit
@@ -144,13 +152,13 @@ if (ally && ally.distance < size * 2) {
 }
 ```
 
-And now apply the total to our position.
+## Step 13. Check for out-of-bounds
 
-```ts
-this.pos = this.pos.add(directionToMove);
-```
+At this point you'll likely have pieces running away off screen indefinitely.
 
-And if we have moved out of bounds, let's just put the piece back in-bounds.
+For a simple solution we can just add an extra check after we've applied out move.
+
+If we have moved out of bounds, let's just put the piece back in-bounds.
 
 ```ts
 // Stay inside the borders
@@ -160,7 +168,15 @@ if (this.pos.x > canvas.width - size) this.pos.x = canvas.width - size;
 if (this.pos.y > canvas.height - size) this.pos.y = canvas.height - size;
 ```
 
-## Step 12. Check for Successful Take-overs
+## Step 14. Check for Successful Take-overs
+
+Things aren't going to look to interesting if nothing changes when it's overtaken.
+
+If a piece has moved within the space of it's prey we should change it over to the current pieces type.
+
+Now that we are changing pieces though we probably need some way to acknowledge that there is no pieces left. To do this we'll say there is a winner when a type has successfully overtaken all it's prey.
+
+E.g. 🪨 wins when there is no more ✂️.
 
 ```ts
 let winner: Type | null = null;
@@ -200,7 +216,7 @@ function render() {
   if (!winner) pieces.forEach((p) => p.update());
 
   // Draw the pieces
-  pieces.forEach((p) => p.draw(ctx));
+  pieces.forEach((p) => p.draw());
 
   // Display the winner
   if (winner) {
@@ -226,8 +242,10 @@ render();
 
 You should now have rocks, papers and scissors moving about the screen. Once one side wins you'll need to refresh to start again.
 
-Prev: [Chapter Two - Drawing](./2-Drawing.md)\
+> **Note** Not working? Checkout the [Complete Example Code](example-complete/src/main.ts).
 
-Next: [Chapter Four - Next Steps](./4-Next-Steps.md)]
+Prev: [Chapter Two - Drawing](./2-Drawing.md)
+
+Next: [Chapter Four - Next Steps](./4-Next-Steps.md)
 
 By [@jahredhope](https://jahred.me/)
