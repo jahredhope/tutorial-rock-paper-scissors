@@ -1,5 +1,3 @@
-# Chapter 1 - Setup
-
 [Introduction](./README.md)
 
 [Chapter One - Setup](./1-Setup.md)
@@ -9,6 +7,8 @@
 [Chapter Three - Behaviour](./3-Behaviour.md)
 
 [Chapter Four - Next Steps](./4-Next-Steps.md)
+
+# Chapter 1 - Setup
 
 This chapter gets you setup with with a basic development environment with a canvas and render loop.
 

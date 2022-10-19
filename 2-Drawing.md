@@ -1,5 +1,3 @@
-# Chapter 2 - Drawing
-
 [Introduction](./README.md)
 
 [Chapter One - Setup](./1-Setup.md)
@@ -9,6 +7,8 @@
 [Chapter Three - Behaviour](./3-Behaviour.md)
 
 [Chapter Four - Next Steps](./4-Next-Steps.md)
+
+# Chapter 2 - Drawing
 
 In this chapter you'll ensure each piece is drawn on screen. Pieces won't be moving yet, but at-least you can see them.
 
