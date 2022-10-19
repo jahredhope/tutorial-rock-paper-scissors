@@ -4,7 +4,9 @@ This chapter gets you setup with with a basic development environment with a can
 
 ## Step 1. Initial Setup
 
-To get started lets create a place to write some code. For this tutorial you'll need a HTML file that can load some TypeScript. Browsers typically can't load TypeScript directly, so you'll need some way to compile your code, alternatively just use JavaScript if that's your preference.
+To get started lets create a place to write some code. For this tutorial you'll need a HTML file that can load some TypeScript.
+
+Browsers typically can't load TypeScript directly, so you'll need some way to compile your code, alternatively just use JavaScript if that's your preference.
 
 I'd recommend [Vite](https://vitejs.dev/guide/) as it's quick to get started compiling TypeScript whilst still giving you nice features like auto-refreshing your page when you make changes.
 
