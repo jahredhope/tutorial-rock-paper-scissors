@@ -12,13 +12,13 @@ Don't forget to replace `<your_subdomain_here>` with your own name. You don't ne
 
 ```bash
 
-pnpm build
+npm run build
 
 ```
 
 ```bash
 
-pnpx surge --domain <your_subdomain_here>.surge.sh dist
+npx surge --domain <your_subdomain_here>.surge.sh dist
 
 ```
 

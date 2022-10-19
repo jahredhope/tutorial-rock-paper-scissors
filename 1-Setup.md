@@ -4,32 +4,33 @@ This chapter gets you setup with with a basic development environment with a can
 
 ## Step 1. Initial Setup
 
-> **Warning**
-> This Tutorial assumes you have [pnpm](https://pnpm.io/) installed. In most cases you can replace `pnpm` with `npm`. The former is just my current preferred solution.
-
 To get started lets create a place to write some code. For this tutorial you'll need a HTML file that can load some TypeScript. Browsers typically can't load TypeScript directly, so you'll need some way to compile your code, alternatively just use JavaScript if you hate type-safety.
 
 I'd recommend [Vite](https://vitejs.dev/guide/) as it's quick to get started compiling TypeScript whilst still giving you nice features like auto-refreshing your page when you make changes.
 
-Just run
+To do this you'll want to have [Node JS](https://nodejs.org/en/) installed:
+
+Then run
 
 ```bash
 
-pnpm create vite
+npm create vite@latest
 
 ```
 
-And select Vanilla and TypeScript.
+Then:
 
-Then select and delete the content in `main.ts` except `import "./style.css";`.
+1. Select **Vanilla** and **TypeScript**.
 
-Then select and delete all the content in `style.css`.
+2. Select and delete the content in `main.ts` except `import "./style.css";`.
 
-Once you do this, run the dev built to start developing.
+3. Select and delete all the content in `style.css`.
+
+Once finished, run the dev built to start developing. This should open up a web server listening on [localhost:5173](http://localhost:5173/).
 
 ```bash
 
-pnpm dev
+npm run dev
 
 ```
 
