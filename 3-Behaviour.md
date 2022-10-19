@@ -1,5 +1,15 @@
 # Chapter 3 - Behaviour
 
+[Introduction](./README.md)
+
+[Chapter One - Setup](./1-Setup.md)
+
+[Chapter Two - Drawing](./2-Drawing.md)
+
+[Chapter Three - Behaviour](./3-Behaviour.md)
+
+[Chapter Four - Next Steps](./4-Next-Steps.md)
+
 In this chapter you'll make each piece move itself. It'll decide where to move by looking at it's closest neighbours.
 
 ## Step 10. Implement Vector Logic

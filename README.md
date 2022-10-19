@@ -16,8 +16,14 @@ The tutorial will cover three main parts:
 
 **No dependencies.** This tutorial is focused on learning how things work under the hood. For production code, I'd recommend considering using stable and well tested libraries.
 
-For a working example, check out [the complete source-code](./example-complete/src/main.ts).
+For a working example, check out [the complete source-code](./example-complete/src/main.ts). Otherwise go to [Chapter One - Setup](./1-Setup.md) to get started.
 
-Next: [Chapter One - Setup](./1-Setup.md)
+[Chapter One - Setup](./1-Setup.md)
+
+[Chapter Two - Drawing](./2-Drawing.md)
+
+[Chapter Three - Behaviour](./3-Behaviour.md)
+
+[Chapter Four - Next Steps](./4-Next-Steps.md)
 
 By [@jahredhope](https://jahred.me/)

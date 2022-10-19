@@ -1,5 +1,15 @@
 # Chapter 2 - Drawing
 
+[Introduction](./README.md)
+
+[Chapter One - Setup](./1-Setup.md)
+
+[Chapter Two - Drawing](./2-Drawing.md)
+
+[Chapter Three - Behaviour](./3-Behaviour.md)
+
+[Chapter Four - Next Steps](./4-Next-Steps.md)
+
 In this chapter you'll ensure each piece is drawn on screen. Pieces won't be moving yet, but at-least you can see them.
 
 ## Step 5. Define a Vector
