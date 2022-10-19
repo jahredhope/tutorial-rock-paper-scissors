@@ -8,7 +8,7 @@
 
 [Chapter Four - Next Steps](./4-Next-Steps.md)
 
-# Chapter 1 - Setup
+# Chapter One - Setup
 
 This chapter gets you setup with with a basic development environment with a canvas and render loop.
 

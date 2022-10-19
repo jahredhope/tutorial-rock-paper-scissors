@@ -8,7 +8,7 @@
 
 [Chapter Four - Next Steps](./4-Next-Steps.md)
 
-# Chapter 2 - Drawing
+# Chapter Two - Drawing
 
 In this chapter you'll ensure each piece is drawn on screen. Pieces won't be moving yet, but at-least you can see them.
 
